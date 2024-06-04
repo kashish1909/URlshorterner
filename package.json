@@ -1,0 +1,13 @@
+{
+    "name": "kashish",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "start": "concurrently \"npm run start:coolurl-master\" \"npm run start:urlshortener\"",
+      "start:backend": "cd coolurl-master && npm start",
+      "start:frontend": "cd urlshortener && npm start"
+    },
+    "devDependencies": {
+      "concurrently": "^7.0.0"
+    }
+  }
